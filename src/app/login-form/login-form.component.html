@@ -1,17 +1,17 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-50  mx-auto">
-    <h4 class="mb-5 text-success">Login</h4>
+    <h4 class="mb-3 text-success">Connexion</h4>
     <div *ngIf="errorMsg" class="alert alert-danger">{{errorMsg}}</div>
     <div class="mb-3">
-        <label for="">Email</label>
-        <input formControlName="email" type="text" class="form-control"><br><br>
+        <label class="mb-3" for="">Email</label>
+        <input formControlName="email" type="text" class="form-control">
     </div>
     <div>
-        <label for="">Password</label>
-        <input formControlName="password" type="password" name="" id="" class="form-control"><br><br>
-
-        <button type="submit" class="btn-btn-primary">
-            Submit
-        </button><br><br>
-
+        <label class="mb-3" for="">Mot de passe</label>
+        <input formControlName="password" type="password" name="" id="" class="mb-3 form-control">
+        
+            <button type="submit" class="btn btn-success">
+                Envoyer
+            </button>
+        
     </div>
 </form>
